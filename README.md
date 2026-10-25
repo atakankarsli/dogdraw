@@ -2,7 +2,7 @@
 
 Procedural SVG dogs with 21 breeds, seeded variations and 10 skeletal animations. No dependencies.
 
-![A procedurally drawn Jack Russell terrier](samples/jack-russell.svg)
+![A procedurally drawn Dachshund](samples/dachshund.svg)
 
 ## Try it
 
@@ -14,7 +14,7 @@ Open [`index.html`](index.html) in a browser. Pick a breed, edit its proportions
 const { writeFileSync } = require('node:fs');
 const { draw_dog_svg } = require('./dogdraw');
 
-writeFileSync('dog.svg', draw_dog_svg('jack_russell', { seed: 'Milo' }));
+writeFileSync('dog.svg', draw_dog_svg('dachshund', { seed: 'Milo' }));
 ```
 
 Animation clips and rig helpers live in [`doganim.js`](doganim.js).
